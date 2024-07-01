@@ -36,6 +36,7 @@ int main(int argc, char* argv[])
 			{
 				quit = true;
 			}
+
 		}
 		// clear screen
 		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
@@ -47,7 +48,7 @@ int main(int argc, char* argv[])
 		SDL_RenderDrawLine(renderer, 0, 600 / 3, 800, 600 / 3);
 		SDL_RenderDrawLine(renderer, 0, 600 / 3 * 2, 800, 600 / 3 * 2);*/
 		//L_RenderDrawLine(renderer, 0, 600 / 5 * 3, 800, 600 / 5 * 3);
-		int wtd = 1;
+		int wtd = 0;
 		if (wtd == 0)
 		{
 			//draw shape
@@ -75,7 +76,7 @@ int main(int argc, char* argv[])
 				int randValue = rand() % 801;
 				int randValue2 = rand() % 601;
 				SDL_RenderDrawLine(renderer, randValue,randValue2,800/2,0);
-				SDL_RenderDrawLine(renderer, randValue,randValue2,randValue,600);
+				SDL_RenderDrawLine(renderer, randValue,randValue2,800/2,600);
 			}
 		}
 		SDL_RenderPresent(renderer);
