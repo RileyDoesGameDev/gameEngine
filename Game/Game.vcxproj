@@ -107,7 +107,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,7 +126,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +145,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -164,7 +164,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Engine\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
