@@ -49,7 +49,15 @@ int main(int argc, char* argv[])
 
         if (input.GetMouseButtonDown(0))
         {
-            particles.push_back(Particle{ mousePosition, {randomf(-100,100),randomf(-100,100)}, randomf(5) });
+            particles.push_back(Particle
+                { mousePosition, 
+                {randomf(-100,100),randomf(-100,100)}, 
+                randomf(5), 
+                (uint8_t)random(1,255),
+                (uint8_t)random(1,255),
+                (uint8_t)random(1,255),
+                (uint8_t)random(1,255)
+                });
             
         }
 
@@ -68,7 +76,7 @@ int main(int argc, char* argv[])
         renderer.SetColor(0, 0, 0, 0);
         renderer.BegineFrame();
 
-        renderer.SetColor(255, 255, 255, 255);
+       //s renderer.SetColor(255, 255, 255, 255);
         for (Particle particle : particles)
         {
             particle.Draw(renderer);
