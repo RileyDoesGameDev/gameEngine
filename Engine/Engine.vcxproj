@@ -20,11 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Input.h" />
+    <ClInclude Include="Source\Partical.h" />
+    <ClInclude Include="Source\Random.h" />
     <ClInclude Include="Source\Renderer.h" />
+    <ClInclude Include="Source\Etimer.h" />
     <ClInclude Include="Source\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Etimer.cpp" />
     <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\Partical.cpp" />
     <ClCompile Include="Source\Renderer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

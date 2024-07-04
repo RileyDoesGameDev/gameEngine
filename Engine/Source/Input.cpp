@@ -18,7 +18,8 @@ void Input::update()
 {
 	SDL_Event event;
 	SDL_PollEvent(&event);
-
+	//if(SDL_PollEvent(&event) == SDL_QUIT)
+	
 
 	// keyboard input
 	m_prevKeyboardState = m_keyboardState;
