@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Input.h" />
+    <ClInclude Include="Source\MathUtils.h" />
     <ClInclude Include="Source\Partical.h" />
     <ClInclude Include="Source\Random.h" />
     <ClInclude Include="Source\Renderer.h" />
@@ -108,15 +109,15 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -129,7 +130,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,8 +139,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -150,15 +151,15 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -171,7 +172,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
-      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\Build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -180,8 +181,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib\x64;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

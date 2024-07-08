@@ -18,6 +18,6 @@ void Particle::Draw(Renderer& renderer)
 	if (lifespan > 0)
 	{
 		renderer.SetColor(red, green, blue, alpha);
-		renderer.DrawPoint(position.x, position.y);
+		renderer.DrawRect(position.x, position.y,4.0f,4.0f);
 	}
 }

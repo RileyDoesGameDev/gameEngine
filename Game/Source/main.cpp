@@ -4,7 +4,9 @@
 #include "Etimer.h"
 #include"input.h"
 #include "Random.h"
+#include "MathUtils.h"
 
+#include <fmod.hpp>
 #include <vector>
 #include <iostream>
 #include <cstdlib>
@@ -19,7 +21,7 @@ int main(int argc, char* argv[])
     Renderer renderer;
     renderer.Initialize();
     renderer.CreateWindow("Engine", 800, 600);
-
+    float offset = 0;
     Input input;
     input.Initialize();
 
@@ -51,7 +53,7 @@ int main(int argc, char* argv[])
         {
             particles.push_back(Particle
                 { mousePosition, 
-                {randomf(-100,100),randomf(-100,100)}, 
+                randomOnUnitCircle() * randomf(50,200),
                 randomf(5), 
                 (uint8_t)random(1,255),
                 (uint8_t)random(1,255),
@@ -82,6 +84,20 @@ int main(int argc, char* argv[])
             particle.Draw(renderer);
 
         }
+
+        renderer.SetColor(255, 255, 255, 0);
+        float radious = 60;
+        offset += (1 * time.GetDeltaTime());
+        for (float angle = 0; angle < 360; angle += 360 / 30)
+        {
+
+            
+            float x = Math::Cos(Math::DegToRad(angle))* Math::Sin(offset+ .05)* radious;
+            float y = Math::Sin(Math::DegToRad(angle)) * Math::Sin(offset+ .05)* radious;
+                renderer.DrawRect(400 + x, 300+ y, 4.0f, 4.0f);
+        }
+
+
 
         renderer.EndFrame();
 
