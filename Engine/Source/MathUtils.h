@@ -10,15 +10,26 @@ namespace Math
 	constexpr float RadToDeg(float radians) { return radians * (180.0f / Pi); }
 	constexpr float DegToRad(float Degrees) { return Degrees * (Pi / 180.0f); }
 
-	float Sin(float radians)
+	inline float Sin(float radians)
 	{
 		return std::sinf(radians);
 	}
 
-	float Cos(float radians)
+	inline float Cos(float radians)
 	{
 		return std::cosf(radians);
 	}
+
+	inline float Sqrt(float value)
+	{
+		return std::sqrtf(value);
+	}
+
+	inline float Atan2(float y, float x)
+	{
+		return std::atan2f(y, x);
+	}
+
 
 	/// <summary>
 	/// Returns the maximum value of a and b
@@ -47,4 +58,12 @@ namespace Math
 		return (value < 0) ? -value : value;
 	}
 
+}
+
+template<typename T>
+T Clamp(T v, T min, T max)
+{
+	if (v < min) return min;
+	if (v > max) return max;
+	return v;
 }

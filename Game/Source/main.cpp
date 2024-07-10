@@ -5,6 +5,8 @@
 #include"input.h"
 #include "Random.h"
 #include "MathUtils.h"
+#include "Model.h"
+#include "Color.h"
 
 #include <fmod.hpp>
 #include <vector>
@@ -14,8 +16,57 @@
 
 using namespace std;
 
+
+
+
 int main(int argc, char* argv[])
 {
+
+
+
+
+    // Audio
+
+      // create audio system
+    FMOD::System* audio;
+    FMOD::System_Create(&audio);
+
+    void* extradriverdata = nullptr;
+    audio->init(32, FMOD_INIT_NORMAL, extradriverdata);
+
+
+   FMOD::Sound* sound = nullptr;
+   
+   std::vector<FMOD::Sound*> sounds;
+
+   audio->createSound("bass.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+   audio->createSound("snare.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+   audio->createSound("open-hat.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+   audio->createSound("cowbell.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+   audio->createSound("clap.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+   audio->createSound("close-hat.wav", FMOD_DEFAULT, 0, &sound);
+   sounds.push_back(sound);
+
+ 
+
+
+
+
+    //audio->createSound("test.wav", FMOD_DEFAULT, 0, &sound);
+
+   
+    //audio->playSound(sound, 0, false, nullptr);
+
 
     // create systems
     Renderer renderer;
@@ -33,9 +84,27 @@ int main(int argc, char* argv[])
        // particles.push_back(Particle{ {rand() % 800, rand() % 600},{randomf(0.1f,1.0f), 0.0f} });
        // particles.clear();
 
+   // std::vector<Vector2> points;
+   // points.push_back(Vector2{ -5, 5 });
+   // points.push_back(Vector2{ 0, -5 });
+   // points.push_back(Vector2{ 5, 5 });
+   // points.push_back(Vector2{ -5, 5 });
+   // Model model{ points, Color{1, 1, 1, 0} };
+   // Vector2 position{ 400, 300 };
+
+
+
     bool quit = false;
     while (!quit)
     {
+
+
+
+
+        //Draw model
+      //  model.Draw(renderer, { 400,300 }, 0, 1);
+
+
         time.Tick();
       
         // INPUT
@@ -44,6 +113,48 @@ int main(int argc, char* argv[])
         {
             quit = true;
         }
+
+        if (input.GetKeyDown(SDL_SCANCODE_Q) && !input.GetPrevKeyDown(SDL_SCANCODE_Q))
+    
+    {
+            audio->playSound(sounds[0], 0, false, nullptr);
+    }
+        
+        if (input.GetKeyDown(SDL_SCANCODE_W) && !input.GetPrevKeyDown(SDL_SCANCODE_W))
+    
+    {
+            audio->playSound(sounds[1], 0, false, nullptr);
+    }
+         
+        if (input.GetKeyDown(SDL_SCANCODE_E) && !input.GetPrevKeyDown(SDL_SCANCODE_E))
+    
+    {
+            audio->playSound(sounds[2], 0, false, nullptr);
+    }
+
+          if (input.GetKeyDown(SDL_SCANCODE_R) && !input.GetPrevKeyDown(SDL_SCANCODE_R))
+    
+    {
+            audio->playSound(sounds[3], 0, false, nullptr);
+    }
+
+          if (input.GetKeyDown(SDL_SCANCODE_T) && !input.GetPrevKeyDown(SDL_SCANCODE_T))
+    
+    {
+            audio->playSound(sounds[4], 0, false, nullptr);
+    }
+
+          if (input.GetKeyDown(SDL_SCANCODE_Y) && !input.GetPrevKeyDown(SDL_SCANCODE_Y))
+    
+    {
+            audio->playSound(sounds[5], 0, false, nullptr);
+    }
+
+
+
+
+
+
 
 
         // UPDATE
@@ -98,6 +209,8 @@ int main(int argc, char* argv[])
         }
 
 
+
+        audio->update();
 
         renderer.EndFrame();
 

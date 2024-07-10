@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Color.h" />
     <ClInclude Include="Source\Input.h" />
     <ClInclude Include="Source\MathUtils.h" />
+    <ClInclude Include="Source\Model.h" />
     <ClInclude Include="Source\Partical.h" />
     <ClInclude Include="Source\Random.h" />
     <ClInclude Include="Source\Renderer.h" />
@@ -30,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="Source\Etimer.cpp" />
     <ClCompile Include="Source\Input.cpp" />
+    <ClCompile Include="Source\Model.cpp" />
     <ClCompile Include="Source\Partical.cpp" />
     <ClCompile Include="Source\Renderer.cpp" />
   </ItemGroup>
@@ -86,20 +89,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\include;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\SDL2\lib;C:\Users\rfoster\Documents\2024NeumontClasses\C++2\gameEngine\ThirdParty\fmod\core\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
