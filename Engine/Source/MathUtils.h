@@ -3,6 +3,7 @@
 
 namespace Math
 {
+
 	constexpr float Pi = 3.14159265359f;//180
 	constexpr float TwoPi = 6.28318530718f;//360
 	constexpr float HalfPi = 1.57079632679; //90
@@ -30,6 +31,16 @@ namespace Math
 		return std::atan2f(y, x);
 	}
 
+	//int Wrap(int value, int max)
+	//{
+	//	return value % max + (value < 0) ? max:0;
+	//
+	//}
+	//int Wrap(float value, float max)
+	//{
+	//	//return std::fmodF (value, max) + ((value < 0) ? max:0);
+	//
+	//}
 
 	/// <summary>
 	/// Returns the maximum value of a and b
@@ -58,7 +69,8 @@ namespace Math
 		return (value < 0) ? -value : value;
 	}
 
-}
+
+
 
 template<typename T>
 T Clamp(T v, T min, T max)
@@ -67,3 +79,18 @@ T Clamp(T v, T min, T max)
 	if (v > max) return max;
 	return v;
 }
+
+
+
+inline int Wrap(int value, int max) {
+	return value % max + (value < 0) ? max : 0;
+}
+inline float Wrap(float value, float max) {
+	return std::fmodf(value, max) + ((value < 0) ? max : 0);
+}
+
+
+}
+
+
+

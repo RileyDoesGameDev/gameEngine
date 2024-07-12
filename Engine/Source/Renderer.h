@@ -13,6 +13,8 @@ public:
 	void BegineFrame();
 	void EndFrame();
 	void SetColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a);
+	int GetWidth()const { return m_width; }
+	int GetHeight() const{ return m_height; }
 
 	void DrawLine(int x1, int y1, int x2, int y2);
 	void DrawLine(float x1, float y1, float x2, float y2);
@@ -23,6 +25,8 @@ public:
 
 
 private:
-	SDL_Window* m_window;
-	SDL_Renderer* m_renderer;
+	SDL_Window* m_window = nullptr;
+	SDL_Renderer* m_renderer = nullptr;
+	int m_width = 0;
+	int m_height = 0;
 };
