@@ -13,6 +13,7 @@ public:
 	m_points{ points },
 	m_color{color}
 {}
+	float GetRadius();
 
 	void Draw(Renderer& renderer, const Vector2& position, float angle, float scale);
 	void Draw(Renderer& renderer, const Transform& transform);

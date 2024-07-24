@@ -50,6 +50,7 @@ struct Vector2
 	float Angle() { return Math::Atan2(x, y); }
 	Vector2 Rotate(float radians) const;
 
+	Vector2 Normalized() const { return *this / Length(); }
 	
 
 };

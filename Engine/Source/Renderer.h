@@ -1,6 +1,7 @@
 #pragma once
 #include<SDL.h>
 #include<string>
+#include <SDL_ttf.h>
 class Renderer
 {
 public:
@@ -24,9 +25,9 @@ public:
 	void DrawRect(float x, float y, float w, float h);
 
 
+	SDL_Renderer* m_renderer = nullptr;
 private:
 	SDL_Window* m_window = nullptr;
-	SDL_Renderer* m_renderer = nullptr;
 	int m_width = 0;
 	int m_height = 0;
 };

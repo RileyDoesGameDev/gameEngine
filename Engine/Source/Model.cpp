@@ -1,5 +1,20 @@
 #include "Model.h"
 
+float Model::GetRadius()
+{
+	float radius = 0;
+	for (const Vector2& point : m_points)
+	{
+		float r = point.Length();
+		if (r > radius)
+		{
+			radius = r;
+		}
+	}
+
+	return radius;
+}
+
 void Model::Draw(Renderer& renderer, const Vector2& position, float angle, float scale)
 {
 	if (m_points.empty()) return;

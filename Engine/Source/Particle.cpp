@@ -1,15 +1,27 @@
-#include "Partical.h"
+#include "Particle.h"
 
 
+
+void Particle::Initialize(const Data& data)
+{
+	isActive = true;
+	position = data.position;
+	velocity = data.velocity;
+	lifespan = data.lifespan;
+	red		 = data.red;
+	green    = data.green;
+}
 
 void Particle::update(float deltaTime)
 {
 	position = position + (velocity * deltaTime);
 
+
 	if (lifespan != 0)
 	{
 		lifespan -= deltaTime;
 	}
+
 
 }
 

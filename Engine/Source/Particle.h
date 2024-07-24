@@ -1,16 +1,29 @@
 #pragma once
 #include "Vector2.h"
 #include"Renderer.h"
+
 struct Particle
 {
-	Vector2 position{ 0, 0 };
-	Vector2 velocity{ 0, 0 };;
-	float lifespan{ 0 };
-	uint8_t red{ 0 }, green{ 0 }, blue{ 0 }, alpha{0};
 
-	Particle() = default;
+	struct Data
+	{
+
+		Vector2 position{ 0, 0 };
+		Vector2 velocity{ 0, 0 };;
+		float lifespan{ 0 };
+		uint8_t red{ 255 }, green{ 255 }, blue{ 255 }, alpha{ 255 };
+		bool isActive{ false };
+
+	};
 	
 
+	Vector2 position{0, 0};
+	Vector2 velocity{ 0, 0 };;
+	float lifespan{ 0 };
+	uint8_t red{ 255 }, green{ 255 }, blue{ 255 }, alpha{ 255 };
+	bool isActive{ false };
+	 
+	Particle() = default;
 
 	Particle(Vector2 position, Vector2 velocity) : 
 		position{ position }, 
@@ -31,6 +44,7 @@ struct Particle
 		alpha{alpha}
 	{}
 
+	void Initialize(const Data& data);
 	void update(float deltaTime);
 	void Draw(Renderer& renderer);
 	
