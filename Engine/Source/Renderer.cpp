@@ -8,8 +8,6 @@ bool Renderer::Initialize()
 		std::cerr << "Error initializing SDL: " << SDL_GetError() << std::endl;
 		return false;
 	}
-	//return true;
-
 	
 		// initialize SDL
 		if (SDL_Init(SDL_INIT_VIDEO) < 0)

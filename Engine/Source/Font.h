@@ -6,9 +6,10 @@ class Font
 public:
 	Font() = default;
 	~Font();
+	friend class Text;
 
 	bool Load(const std::string& name, int fontSize);
 
-	_TTF_Font* m_ttfFont{ nullptr };
 private:
+	_TTF_Font* m_ttfFont{ nullptr };
 };

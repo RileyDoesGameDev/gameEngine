@@ -1,5 +1,5 @@
 #include "Text.h"
-
+#include <iostream>
 
 Text::~Text()
 {
@@ -16,7 +16,7 @@ bool Text::Create(Renderer& renderer, const std::string& text, const Color& colo
 	SDL_Surface* surface = TTF_RenderText_Solid(m_font->m_ttfFont, text.c_str(), c);
 	if (surface == nullptr)
 	{
-		//std::cerr << "Could not create surface.\n";
+		std::cerr << "Could not create surface.\n";
 		return false;
 	}
 
@@ -25,7 +25,7 @@ bool Text::Create(Renderer& renderer, const std::string& text, const Color& colo
 	if (surface == nullptr)
 	{
 		SDL_FreeSurface(surface);
-		//std::cerr << "Could not create texture" << SDL_GetError() << std::endl;
+		std::cerr << "Could not create texture" << SDL_GetError() << std::endl;
 		return false;
 	}
 

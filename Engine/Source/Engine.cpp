@@ -13,7 +13,7 @@ bool Engine::Initialize()
 	m_audio->Initialize();
 
 	m_time = std::make_unique<Time>();
-	//m_particleSystem = std::make_unique<ParticleSystemr>();
+	m_particleSystem = std::make_unique<ParticleSystem>();
 	return true;
 }
 
@@ -42,7 +42,7 @@ void Engine::Update()
 	m_time->Tick();
 	m_input->update();
 	m_audio->Update();
-	//m_particleSystem->Update(m_time->GetDeltaTime())
+	m_particleSystem->Update(m_time->GetDeltaTime());
 
 	
 }

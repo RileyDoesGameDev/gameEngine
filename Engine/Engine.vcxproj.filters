@@ -39,9 +39,6 @@
     <ClCompile Include="Source\Actor.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Scenecpp.cpp">
-      <Filter>Resource Files\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Scene.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>

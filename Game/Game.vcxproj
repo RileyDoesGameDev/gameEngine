@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Bullet.cpp" />
-    <ClCompile Include="Source\Enamy.cpp" />
+    <ClCompile Include="Source\Enemy.cpp" />
     <ClCompile Include="Source\GameData.cpp" />
     <ClCompile Include="Source\main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SourceDir/Engine/Source);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -39,7 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Bullet.h" />
-    <ClInclude Include="Source\Enamy.h" />
+    <ClInclude Include="Source\Enemy.h" />
     <ClInclude Include="Source\Game.h" />
     <ClInclude Include="Source\GameData.h" />
     <ClInclude Include="Source\PickUp.h" />

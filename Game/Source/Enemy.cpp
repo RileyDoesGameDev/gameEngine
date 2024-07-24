@@ -1,9 +1,9 @@
-#include "Enamy.h"
+#include "Enemy.h"
 #include "Player.h"
 #include "Scene.h"
 #include "Game.h"
 
-void Enamy::Update(float dt)
+void Enemy::Update(float dt)
 {
 	Player* player = m_scene->GetActor<Player>();
 
@@ -16,7 +16,7 @@ void Enamy::Update(float dt)
 	Actor::Update(dt);
 }
 
-void Enamy::OnCollision(Actor* actor)
+void Enemy::OnCollision(Actor* actor)
 {
 	if (actor->GetTag() == "Player")
 	{

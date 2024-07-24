@@ -24,7 +24,7 @@
     <ClCompile Include="Source\Bullet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Enamy.cpp">
+    <ClCompile Include="Source\Enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\GameData.cpp">
@@ -44,7 +44,7 @@
     <ClInclude Include="Source\Bullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Enamy.h">
+    <ClInclude Include="Source\Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameData.h">

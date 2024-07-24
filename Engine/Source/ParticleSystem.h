@@ -7,11 +7,8 @@
 class ParticleSystem
 {
 public:
-	ParticleSystem() = default;
-	ParticleSystem(int maxSize)
-	{
-		m_particles.resize(maxSize);
-	}
+	ParticleSystem(int maxSize = 10000) { m_particles.resize(maxSize); }
+
 	void Update(float dt);
 	void Draw(Renderer& renderer);
 	void AddParticle(const Particle::Data& data);
