@@ -66,10 +66,25 @@ namespace GameData
         { 4, 2 },
         { 3, 2 },
         { 2.5f, 0.0f },
-        { 3, -2 },
+        { 3, -2 }
+
+
+
+
 
 
     };
+
+    const std::vector<Vector2> bulletPoints
+    {
+       { 5, 0 },
+       { -5, -5 },
+       { -5, 5 },
+       { 5, 0 }
+    };
+
+
+
 
 }
     

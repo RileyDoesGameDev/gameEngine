@@ -38,6 +38,7 @@ private:
 	
 
 	Font* m_font{ nullptr };
+	Font* m_largeFont{ nullptr };
 	Text* m_textScore{ nullptr };
 	Text* m_textLives{ nullptr };
 	Text* m_textTitle{ nullptr };

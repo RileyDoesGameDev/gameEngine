@@ -15,6 +15,7 @@ public:
 	{}
 	void Update(float dt);
 	virtual void OnCollision(Actor* actor);
+
 	void SetFireModifier(float modifier) { m_fireModifier = modifier; }
 private:
 

@@ -10,6 +10,8 @@ void Particle::Initialize(const Data& data)
 	lifespan = data.lifespan;
 	red		 = data.red;
 	green    = data.green;
+	blue     = data.blue;
+	alpha    = data.alpha;
 }
 
 void Particle::update(float deltaTime)

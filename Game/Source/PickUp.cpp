@@ -8,4 +8,4 @@ void PickUp::OnCollision(Actor* actor)
 		dynamic_cast<Player*>(actor)->SetFireModifier(1);
 		m_destroyed = true;
 	}
-}
+}     

@@ -37,11 +37,11 @@ int main(int argc, char* argv[])
 
 
 
-    Font* font = new Font();
-    font->Load("Quick Dragon.otf", 50);
+   // Font* font = new Font();
+    //font->Load("Quick Dragon.otf", 50);
 
-    Text* text = new Text(font);
-    text->Create(g_engine.GetRenderer(), "Hello World", Color{ 1, 1, 1, 1 });
+    //Text* text = new Text(font);
+   // text->Create(g_engine.GetRenderer(), "Hello World", Color{ 1, 1, 1, 1 });
 
     while (!g_engine.IsQuit())
     {
@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
         game->Update(g_engine.GetTime().GetDeltaTime()); 
         g_engine.GetRenderer().SetColor(1,0,0,0);
         g_engine.GetRenderer().BegineFrame();
-        text->Draw(g_engine.GetRenderer(), 200, 200);
+       // text->Draw(g_engine.GetRenderer(), 200, 200);
         game->Draw(g_engine.GetRenderer());
         g_engine.GetPS().Draw(g_engine.GetRenderer());
 

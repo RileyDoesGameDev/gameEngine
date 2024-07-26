@@ -24,7 +24,7 @@ void ParticleSystem::AddParticle(const Particle::Data& data)
 	Particle* particle = GetFreeParticle();
 	if (particle)
 	{
-
+		particle->Initialize(data);
 	}
 
 }
