@@ -28,7 +28,7 @@ public:
 	const Transform& GetTransform() { return m_transform; }
 
 	virtual void OnCollision(Actor* actor) = 0;
-	//float GetRadius() {return (m_model) ? m_model->GetRadius() * }
+	//float GetRadius() {return (m_model) ? m_model->GetRadius() :}
 
 	friend class Scene;
 protected:

@@ -5,6 +5,8 @@
 #include "random.h"
 #include "ParticleSystem.h"
 #include"Engine.h"
+#include "GameData.h"
+#include "Bullet.h"
 void Enemy::Update(float dt)
 {
 	Player* player = m_scene->GetActor<Player>();
@@ -16,26 +18,47 @@ void Enemy::Update(float dt)
 		m_transform.rotation = direction.Angle();
 	}
 	Actor::Update(dt);
+
+
+	m_fireTimer -= dt;
+
+	if (m_fireTimer <= 0)
+	{
+		m_fireTimer = 5.0f;
+
+		if (player)
+		{
+			Vector2 direction = player->GetTransform().position;
+			float angle = direction.Angle();
+			
+		
+
+
+			// actor
+
+			Model* model = new Model{ GameData::bulletPoints, Color{ 1, 1, 1,0 } };
+			Transform transform{ m_transform.position, angle, 1.0f };
+			auto bullet = std::make_unique<Bullet>(200.0f, transform, model);
+			bullet->SetLifespan(2);
+			bullet->SetTag("EnemyBullet");
+			m_scene->AddActor(std::move(bullet));
+		}
+
+	}
+
+
+
+
+
 }
+
 
 void Enemy::OnCollision(Actor* actor)
 {
-	if (actor->GetTag() == "Player" || actor->GetTag() == "PlayerBullet")
+	if (actor->GetTag() == "Player")
 	{
-		m_scene->GetGame()->AddPoints(100);
+		
 		m_destroyed = true;
-
-
-		Particle::Data data
-		{
-			m_transform.position, Vector2{1,0}.Rotate(randomf(Math::TwoPi)) * 150,
-			randomf(0.5f,2.0f), 0,1,1,0
-		};
-
-		for (int i = 0; i < 200; i++)
-		{
-			g_engine.GetPS().AddParticle(data);
-		}
 		
 	}
 }

@@ -37,11 +37,7 @@ int main(int argc, char* argv[])
 
 
 
-   // Font* font = new Font();
-    //font->Load("Quick Dragon.otf", 50);
 
-    //Text* text = new Text(font);
-   // text->Create(g_engine.GetRenderer(), "Hello World", Color{ 1, 1, 1, 1 });
 
     while (!g_engine.IsQuit())
     {

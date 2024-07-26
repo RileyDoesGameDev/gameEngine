@@ -9,6 +9,7 @@ public:
 
 
 	void OnCollision(Actor* actor) override;
+	//bool isDestroyed() { return m_destroyed; }
 protected:
-
+	
 };
